@@ -94,16 +94,6 @@ Cole este trecho dentro do `<head>`:
 </script>
 ```
 
-## Ajustes antes de publicar
-
-- trocar `https://www.seu-dominio.com.br` pelo domínio final em:
-  - `sitemap.xml`
-  - `robots.txt`
-  - `local-business.jsonld`
-- conferir se todos os caminhos de favicon estão corretos na raiz do projeto;
-- testar no celular e no desktop;
-- revisar se a logo está em `assets/images/logo.png`.
-
 ## Contatos da loja
 
 - WhatsApp: `(21) 98284-7106`
