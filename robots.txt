@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Arquivo robots.txt deve ficar na raiz do domínio.
+# Ajuste a linha abaixo para o domínio final publicado.
+Sitemap: https://casa-mae-granola.netlify.app/sitemap.xml

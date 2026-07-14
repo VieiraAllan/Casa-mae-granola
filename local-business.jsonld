@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "HealthFoodStore",
+  "@id": "https://casa-mae-granola.netlify.app/#localbusiness",
+  "name": "Casa da Mãe Granola",
+  "alternateName": "Casa da Mãe Granola - Sempre cabe mais um grão",
+  "description": "Loja de produtos naturais, temperos, grãos e itens para o dia a dia em Sepetiba, Rio de Janeiro.",
+  "slogan": "Sempre cabe mais um grão",
+  "url": "https://casa-mae-granola.netlify.app/",
+  "image": "https://casa-mae-granola.netlify.app/assets/images/logo.png",
+  "telephone": "+55 21 98284-7106",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Estr. São Tarcísio, 854 - loja B",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "postalCode": "23530-827",
+    "addressCountry": "BR"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Sepetiba"
+  },
+  "sameAs": [
+    "https://www.instagram.com/casamaegranola/"
+  ],
+  "hasMap": "https://share.google/hAyukfzWMMVyBGpOT"
+}
