@@ -1,0 +1,243 @@
+/* =========================
+   RESPONSIVE CSS
+   ========================= */
+
+/* Desktop menor / notebook */
+@media (max-width: 1100px) {
+  .hero__wrapper {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__visual {
+    max-width: 640px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .about__grid,
+  .location__wrapper,
+  .footer__top {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  :root {
+    --header-height: 82px;
+  }
+
+  .products__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nav__menu {
+    gap: var(--space-4);
+  }
+
+  .brand__name {
+    font-size: 1.15rem;
+  }
+
+  .brand__slogan {
+    font-size: 0.78rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    width: min(100% - 1.25rem, var(--container-width));
+  }
+
+  .section,
+  .about,
+  .products,
+  .benefits,
+  .location,
+  .contact,
+  .cta-final {
+    padding: var(--space-16) 0;
+  }
+
+  .header {
+    height: var(--header-height);
+  }
+
+  .nav__toggle {
+    display: inline-grid;
+    place-items: center;
+  }
+
+  .nav__cta .btn {
+    display: none;
+  }
+
+  .nav__menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 1rem;
+    right: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    background-color: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(47, 111, 30, 0.1);
+    box-shadow: var(--shadow-medium);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition:
+      opacity var(--transition-base),
+      visibility var(--transition-base),
+      transform var(--transition-base);
+  }
+
+  .nav__menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .nav__link {
+    width: 100%;
+    padding: 0.3rem 0;
+  }
+
+  .hero {
+    padding-top: var(--space-16);
+  }
+
+  .hero__title {
+    font-size: clamp(2.1rem, 7vw, 3.2rem);
+  }
+
+  .hero__text {
+    font-size: 1rem;
+  }
+
+  .hero__actions,
+  .hero__meta,
+  .location__actions,
+  .cta-final__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions .btn,
+  .location__actions .btn,
+  .cta-final__actions .btn {
+    width: 100%;
+  }
+
+  .hero__visual-card {
+    min-height: 360px;
+    padding: var(--space-6);
+  }
+
+  .section-heading {
+    margin-bottom: var(--space-8);
+  }
+
+  .section-heading h2,
+  .location__info h2 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .products__grid,
+  .benefits__grid,
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .location__info,
+  .cta-final__box,
+  .about__box {
+    padding: var(--space-8);
+  }
+
+  .location__map,
+  .location__map iframe {
+    min-height: 320px;
+  }
+
+  .footer__brand {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .floating-whatsapp {
+    width: 58px;
+    height: 58px;
+    right: 16px;
+    bottom: 16px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  :root {
+    --header-height: 78px;
+  }
+
+  .brand__logo {
+    width: 46px;
+    height: 46px;
+  }
+
+  .brand__name {
+    font-size: 1rem;
+  }
+
+  .brand__slogan {
+    display: none;
+  }
+
+  .hero__badge,
+  .hero__meta-item,
+  .section-tag {
+    font-size: 0.78rem;
+  }
+
+  .hero__visual-card {
+    min-height: 300px;
+  }
+
+  .hero__logo-wrap {
+    width: min(100%, 280px);
+  }
+
+  .card,
+  .location__info,
+  .about__box,
+  .cta-final__box {
+    border-radius: 20px;
+  }
+
+  .contact-card {
+    min-height: auto;
+  }
+}
